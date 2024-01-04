@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font sansita, galada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Sansita:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>CATEGORY</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_menu">
+            <div class="header_menu_left">
+                <li><a href="">Shop</a>
+                    <ul class="sub_menu grid">
+                        <li><a href="category.html">Nữ</a>
+                            <ul>
+                                <li><a href="category.html">HÀNG NỮ MỚI VỀ</a></li>
+                                <li><a href="">NEW SECRET</a></li>
+                                <li><a href="">THANH SẮC</a></li>
+                                <li><a href="">LADIES, SUIT UP!</a></li>
+                            </ul>
+                        </li>
+                            
+                        <li><a href="">Nam</a>
+                            <ul>
+                                <li><a href="">HÀNG Nam MỚI VỀ</a></li>
+                                <li><a href="">SAFE ZONE</a></li>
+                                <li><a href="">NEW POLO FOR MEN</a></li>
+                                <li><a href="">ÁO +</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Trẻ Em</a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo Thun</a></li>
+                                <li><a href="">Áo Khoác</a></li>
+                                <li><a href="">Áo Len</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Sale</a>
+                            <ul>
+                                <li><a href="">Quần Dài</a></li>
+                                <li><a href="">Quần Lứng</a></li>
+                                <li><a href="">Quần Kaki</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href=""><img src="./image/nu1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./image/nam.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./image/kid.img" alt=""></a></li>
+                        <li><a href=""><img src="./image/trousers.jpg" alt=""></a></li>
+                            
+                    </ul>
+                </li>
+
+                <li><a href="">Contact us</a></li>
+            </div>
+            <div class="logo">
+                <p><a href="Home.html">JORKER SHOP</a></p>
+            </div>
+            <div class="header_menu_right">
+                <li><input placeholder="Search" type="text"><a class="fas fa-search" href=""></a></li>
+                <li><a href="">Wish List</a></li>
+                <li><a href="Login.html">Log in</a></li>
+            </div>
+        </div>
+    </header>
+    <!-------------------------------------category-------------------------------------->
+    <section class="category">
+        <div class="container">
+            <div class="category-top row">
+                <p> Trang chủ</p> <span>&#10230;</span>
+                <p>Nữ</p> <span>&#10230;</span>
+                <p>Hàng nữ mới về</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="category-left">
+                    <ul>
+                        <li class="category-left-li block"><a href="#">Nữ</a>
+                            <ul>
+                                <li><a href="category.html">HÀNG NỮ MỚI VỀ</a></li>
+                                <li><a href="">NEW SECRET</a></li>
+                                <li><a href="">THANH SẮC</a></li>
+                                <li><a href="">LADIES, SUIT UP!</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-left-li "><a href="#">Nam</a>
+                            <ul>
+                                <li><a href="">HÀNG Nam MỚI VỀ</a></li>
+                                <li><a href="">SAFE ZONE</a></li>
+                                <li><a href="">NEW POLO FOR MEN</a></li>
+                                <li><a href="">ÁO +</a></li>
+                            </ul>
+                        <li class="category-left-li block"><a href="#">Trẻ Em</a>
+                            <ul>
+                                <li><a href="">HÀNG MỚI VỀ TRẺ EM</a></li>
+                                <li><a href="">DRAW THE DREAM</a></li>
+                                <li><a href="">BÉ GÁI +</a></li>
+                                <li><a href="">Quần bé gái</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-left-li block"><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="category-right row">
+                    <div class="category-right-top-item">
+                        <p>HÀNG NỮ MỚI VỀ</p>
+                    </div>
+                    <div class="category-right-top-item ">
+                        <button onclick="clickboloc_function()"><span>Bộ Lọc</span><i
+                                class="fas fa-sort-down"></i></button>
+                    </div>
+                    <div class="category-right-top-item">
+                        <select name="" id="">
+                            <option value="">Sắp xếp</option>
+                            <option value="">Giá cao đến thấp</option>
+                            <option value="">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+
+                    <div id="boloc-hide">
+                        <div class="boloc ">
+                            <div class="boloc-item">
+                                <h2>Size:</h2>
+                                <ul class="boloc-item-size-bottom">
+                                    <button>S</button>
+                                    <button>M</button>
+                                    <button>L</button>
+                                    <button>XL</button>
+                                    <button>XXL</button>
+                                </ul>
+                            </div>
+                            <div class="boloc-item">
+                                <h2>Màu:</h2>
+                                <div class="boloc-item-color-bottom">
+
+                                </div>
+                            <script src="../assets/js/boxColor.js"></script>
+                            </div>
+
+                            <div class="boloc-item">
+                                <h2>Còn hàng:</h2>
+                                <input type="checkbox">
+                            </div>
+
+                            <div class="boloc-item">
+                                <input class="boloc-bottom" type="button" value="Xóa">
+                                <input class="boloc-bottom" type="button" value="Lọc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-right-content row">
+                        <div class="category-right-content-item" id="id0">
+                            <img src="image/sp1.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M1</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item" id="id1">
+                            <img src="image/sp2.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M2</h1>
+                            <p>890.000<sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp3.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M3</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp4.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M4</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp5.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M5</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp6.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M6</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp7.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M7</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="image/sp8.jpg">
+                            <h1>ÁO LỤA TAY KIỂU M8</h1>
+                            <p>890.000 <sup>đ</sup> </p>
+                            <p>_new_</p>
+                        </div>
+                    </div>
+
+                    <div class="category-right-bottom row">
+                        <div class="category-right-bottom-items">
+                            <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
+                        </div>
+                        <div class="category-right-bottom-items">
+                            <p><span>&#171;<span>1 2 3 4 5</span>&#187;</span>Trang cuối</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------footer-------------------------------------->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_items_top">
+                <p>JOKER SHOP is top fashion, high quality for everyone</p>
+            </div>
+            <div class="footer_top_items_bot">
+                <p>CALL US </p>
+                <p>123-456-789</p>
+            </div>
+        </div>
+        <div class="footer_bot">
+            <div class="footer_bot_left">
+                <p>JORKER SHOP</p>
+                <ul>
+                    <li><img src="./assets/image/facebook.png" alt="facebook"></li>
+                    <li><img src="./assets/image/youtube.svg" alt="youtube"></li>
+                    <li><img src="./assets/image/twitter.svg" alt="twitter"></li>
+                </ul>
+
+            </div>
+            <div class="footer_bot_right">
+                <div class="footer_bot_right_top">
+                    <p>Contact us</p>
+                    <p>Group 1</p>
+                    <p>Internet and Cong Nghe Web</p>
+                </div>
+                <div class="footer_bot_right_bot">
+                    <p>CALL US </p>
+                    <p>123-456-789</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+
+        /*------------------------------slidebar-------------------------*/
+        const itemslidebar = document.querySelectorAll(".category-left-li")
+        itemslidebar.forEach(function (menu, index) {
+            menu.addEventListener("click", function () {
+                menu.classList.toggle("block")
+            })
+
+        })
+        /*------------------------------bo loc-------------------------*/
+
+        function clickboloc_function() {
+            var x = document.getElementById("boloc-hide");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+            console.log(x.style.display)
+        }
+
+
+    </script>
+
+</body>
+
+</html>

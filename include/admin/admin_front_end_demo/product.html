@@ -1,0 +1,83 @@
+
+<!--demo giao diện admin-->
+<!--header.php-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style-admin.css">
+    <title>Danh mục sản phẩm</title>
+</head>
+<body>
+    <header>
+        <h1>ADMIN</h1>
+    </header>
+
+   <!--slider.php--> 
+    <section class="admin-content">
+        <div class="content-left">
+            <ul>
+                <li><a href="">Danh mục</a>
+                    <ul>
+                        <li><a href="">Thêm danh mục</a></li>
+                        <li><a href="">Danh sách danh mục</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Loại sản phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm loại sản phẩm</a></li>
+                        <li><a href="">Danh sách loại sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm sản phẩm</a></li>
+                        <li><a href="">Danh sách sản phẩm</a></li> 
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!--sử lý php-->
+        <div class="content-right">
+            <div class="product-add">
+                <h1>Thêm sản phẩm</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="area1">
+                        <label for="">Nhập tên sản phẩm<span style="color:red;">*</span></label>
+                        <label for="">Chọn danh mục<span style="color:red;">*</span></label>
+                        <label for="">Chọn loại sản phẩm<span style="color:red;">*</span></label>
+                        
+                        <input required type="text">
+                        <select required name="" id="">
+                            <option value="">--Chọn--</option>
+                        </select>
+                        <select required name="" id="">
+                            <option value="">--Chọn--</option>
+                        </select>
+
+                        <label for="">Chọn ảnh<span style="color:red;">*</span></label>
+                        <label for="">Nhập giá sản phẩm<span style="color:red;">*</span></label>
+                        <label for="">Nhập giá khuyến mãi<span style="color:red;">*</span></label>
+                        
+                        <input required multiple type="file">
+                        <input required type="text">
+                        <input type="text">
+                        
+                    </div>
+                    <div class="area2">
+                        <label for="">Mô tả sản phẩm<span style="color:red;">*</span></label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        
+                        <button type="submit">Thêm</button>
+                    </div>
+                    
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

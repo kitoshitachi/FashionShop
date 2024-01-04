@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--sansita font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!--galada font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Sansita:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="header_menu">
+            <div class="header_menu_left">
+                <li><a href="">Shop</a>
+                    <ul class="sub_menu grid">
+                        <li><a href="category.html">Nữ</a>
+                            <ul>
+                                <li><a href="category.html">HÀNG NỮ MỚI VỀ</a></li>
+                                <li><a href="">NEW SECRET</a></li>
+                                <li><a href="">THANH SẮC</a></li>
+                                <li><a href="">LADIES, SUIT UP!</a></li>
+                            </ul>
+                        </li>
+                            
+                        <li><a href="">Nam</a>
+                            <ul>
+                                <li><a href="">HÀNG Nam MỚI VỀ</a></li>
+                                <li><a href="">SAFE ZONE</a></li>
+                                <li><a href="">NEW POLO FOR MEN</a></li>
+                                <li><a href="">ÁO +</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Trẻ Em</a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo Thun</a></li>
+                                <li><a href="">Áo Khoác</a></li>
+                                <li><a href="">Áo Len</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Sale</a>
+                            <ul>
+                                <li><a href="">Quần Dài</a></li>
+                                <li><a href="">Quần Lứng</a></li>
+                                <li><a href="">Quần Kaki</a></li>
+                            </ul>
+                        </li>
+             
+                    </ul>
+                </li>
+
+                <li><a href="">Contact us</a></li>
+            </div>
+            <div class="logo">
+                <p><a href="">JORKER SHOP</a></p>
+            </div>
+            <div class="header_menu_right">
+                <li><input placeholder="Search" type="text"><a class="fas fa-search" href=""></a></li>
+                <li><a href="">Wish List</a></li>
+                <li><a href="Login.html">Log in</a></li>
+            </div>
+        </div>
+
+        <section class="slider">
+            <div class="slider_content">
+                <p>What Do You Want ?</p>
+            </div>
+            <div class="slider_content">
+                <button>Sale 50%</button>
+            </div>
+            <div class="slider_content">
+                <button>Special News</button>
+            </div>
+        </section>
+    </header>
+
+    <section class="feedback">
+        <div class="feedback_top">
+            <div class="feedback_top_left">
+                <div class="img_black">
+                    <div class="feedback_top_items">
+                        <p>JOKER Clothes</p>
+                    </div>
+                    <div class="feedback_top_items">
+                        <button>Got it</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback_top_right">
+                <div class="img_black">
+                    <div class="feedback_top_items">
+                        <p>JOKER Clothes</p>
+                    </div>
+                    <div class="feedback_top_items">
+                        <button>Got it</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback_bot">
+            <h1>Question And Feedback</h1>
+            <p>Would you like take some advice ?</p>
+            <button>Ask Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_items_top">
+                <p>JOKER SHOP is top fashion, high quality for everyone</p>
+            </div>
+            <div class="footer_top_items_bot">
+                <p>CALL US </p>
+                <p>123-456-789</p>
+            </div>
+        </div>
+        <div class="footer_bot">
+            <div class="footer_bot_left">
+                <p>JORKER SHOP</p>
+                <ul>
+                    <li><img src="./image/facebook.png" alt=""></li>
+                    <li><img src="./image/youtube.svg" alt=""></li>
+                    <li><img src="./image/twitter.svg" alt=""></li>
+                </ul>
+
+            </div>
+            <div class="footer_bot_right">
+                <div class="footer_bot_right_top">
+                    <p>Contact us</p>
+                    <p>Group 1</p>
+                    <p>Internet and Cong Nghe Web</p>
+                </div>
+                <div class="footer_bot_right_bot">
+                    <p>CALL US </p>
+                    <p>123-456-789</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+<!--------------------->
+<script>
+    const header_menu = document.querySelector(".header_menu")
+    window.addEventListener("scroll", function(){
+        x = window.pageYOffset
+        console.log(x)
+        if (x > 0){
+            header_menu.classList.add("sticky")
+        }
+        else{
+            header_menu.classList.remove("sticky")
+        }
+    })
+</script>
+</html>

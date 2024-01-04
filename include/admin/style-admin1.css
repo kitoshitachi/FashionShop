@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "myfonts-1";
+  src: url("../fonts/Cagliostro-Regular.ttf") format("ttf"),
+    url("../fonts/cagliostro-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    outline: none;
+    font-size: 10px;
+}
+h1,a,th,td{
+    font-family: 'myfonts-1';
+}
+a,th,input,option,button,select,label{
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+ul{
+    list-style: none;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    max-width: 1420px;
+}
+header{
+    width: 100vw;
+    border-bottom: 8px solid #a66;
+    border-top: 8px solid #a66;
+    text-align: center;
+    line-height: 90px;
+}
+header h1{
+    font-size: 4em;
+}
+.admin-content{
+    display: grid;
+    grid-template-columns: 20% auto;
+    line-height: 3em;
+    border-bottom: solid #a66 8px;
+}
+
+/*======================content left==========================*/
+
+.content-left{
+    border-right: solid #a66 8px;
+}
+.content-left >ul > li > p{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.content-left li > ul > li > a{
+    margin-left: 2.5rem;
+    line-height: 50px;
+}
+.content-left li > ul > li:hover{
+    background-color: #a66;
+}
+.content-left li > ul > li:hover >a{
+    color: #fff;
+}
+
+/*======================content right==========================*/
+.content-right{
+    width: 80vw;    
+}
+.content-right h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+/*===========================add==============================*/
+
+.add form{
+    text-align: center;
+}
+.add form input,
+.add form button,
+.add option,
+.add select,
+.product-add button{
+    border: solid #a66 4px;
+    margin: 1rem;
+    padding:2px;
+}
+
+.add button:hover,
+.product-add button:hover{
+    background-color: #a66;
+    color: #fff;
+}
+
+.add select:active,
+.add button:active{
+    background-color: #a56;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*===========================list====================*/
+
+.list table{
+    margin: 10px auto;
+    width: 90%;    
+    border-collapse: collapse;
+    text-align: center;
+}
+.list tr th,.list tr td{
+    border: #a66 solid 4px;
+}
+tr td,tr td a{
+    font-size: 1.5rem;
+}
+
+/*=================================product-add=================================*/
+
+.product-add form{
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+}
+.product-add .area1{
+    display: grid;
+    grid-template-columns: 35% 20% 20%;
+    column-gap: 40px;
+}
+.product-add .area2{
+    display: grid;
+    width: 85%;
+}
+.product-add button{
+    width: 10%;
+    margin: 10px auto 10px auto;
+}
+.list .text-area{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 240px;
+}
